@@ -6,15 +6,18 @@
   box-sizing: border-box;
 }
  
-html, body {
+html {
   background-color: #f7f7f5;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+}
+ 
+body {
+  background-color: #f7f7f5;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
  
 a {
-  display: inline-block;
+  display: block;
   line-height: 0;
 }
  
@@ -30,18 +33,16 @@ img {
  
 /* ================================================================
    MOBILE LAYOUT (default, up to 767px)
-   Frame: 393 × 853
+   Design: 393 × 853
    ================================================================ */
  
 .mobile-layout {
   width: 393px;
-  height: 853px;
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
   background-color: #f7f7f5;
-  position: relative;
-  overflow: hidden;
+  transform-origin: top center;
 }
  
 .mobile-logo {
@@ -54,9 +55,6 @@ img {
   height: 378px;
 }
  
-/* Buttons container: 430px wide (overflows 393px viewport,
-   but only transparent SVG whitespace extends beyond edges).
-   This matches viewBox scale so button rects appear at correct height. */
 .mobile-buttons {
   width: 430px;
   margin-top: 31px;
@@ -73,7 +71,12 @@ img {
 }
  
 .mobile-btn-row + .mobile-btn-row {
-  margin-top: -41px;
+  margin-top: -42px;
+}
+ 
+/* Last wide row (transaction) needs tighter gap per reference */
+.mobile-btn-row:nth-child(4) {
+  margin-top: -47px;
 }
  
 .mobile-btn-row-pair {
@@ -99,7 +102,7 @@ img {
 }
  
 .mobile-writing {
-  margin-top: -17px;
+  margin-top: 28px;
   width: 430px;
   flex-shrink: 0;
 }
@@ -112,7 +115,7 @@ img {
  
 /* ================================================================
    TABLET LAYOUT (768px – 1024px)
-   Frame: 768 × 1024
+   Design: 768 × 1024
    ================================================================ */
  
 @media (min-width: 768px) {
@@ -122,28 +125,26 @@ img {
  
   .tablet-layout {
     width: 768px;
-    height: 1024px;
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
     background-color: #f7f7f5;
-    position: relative;
-    overflow: hidden;
+    transform-origin: top center;
   }
  
   .tablet-logo {
-    margin-top: 54px;
+    margin-top: 52px;
     flex-shrink: 0;
   }
  
   .tablet-logo img {
-    width: 540px;
-    height: 540px;
+    width: 536px;
+    height: 536px;
   }
  
   .tablet-buttons {
     width: 430px;
-    margin-top: 21px;
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,9 +184,10 @@ img {
   }
  
   .tablet-writing {
-    margin-top: 10px;
+    margin-top: 40px;
     width: 280px;
     flex-shrink: 0;
+    padding-bottom: 33px;
   }
  
   .tablet-writing img {
@@ -197,7 +199,7 @@ img {
  
 /* ================================================================
    DESKTOP LAYOUT (1025px+)
-   Frame: 1920 × 1080
+   Design: 1920 × 1080
    ================================================================ */
  
 @media (min-width: 1025px) {
@@ -211,7 +213,7 @@ img {
     margin: 0 auto;
     position: relative;
     background-color: #f7f7f5;
-    overflow: hidden;
+    transform-origin: top center;
   }
  
   .desktop-logo {
