@@ -1,4 +1,4 @@
-7
+
 /**
  * Scales the active layout to fit the viewport width.
  * Allows vertical scrolling if content is taller than viewport.
