@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 192 108">
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 170 44">
   <!-- Generator: Adobe Illustrator 29.8.3, SVG Export Plug-In . SVG Version: 2.1.1 Build 3)  -->
   <defs>
     <style>
@@ -14,7 +14,7 @@
       }
     </style>
   </defs>
-  <rect class="st0" x="14.6" y="33.39" width="162.79" height="41.21" rx="20.61" ry="20.61"/>
-  <path class="st1" d="M90.51,59.99l5.36-7.11v.31l-4.98-6.65h.48l4.69,6.29h-.12l4.69-6.29h.46l-4.92,6.58v-.15l5.31,7.04h-.48l-5.08-6.75h.12l-5.08,6.75h-.46Z"/>
-  <circle class="st1" cx="158.7" cy="54" r="3.97"/>
+  <rect class="st0" x="3.6" y="1.39" width="162.79" height="41.21" rx="20.61" ry="20.61"/>
+  <path class="st1" d="M79.39,27.99l5.4-7.21v.52l-5.04-6.77h.77l4.61,6.19h-.25l4.61-6.19h.73l-4.98,6.67v-.35l5.36,7.13h-.77l-4.98-6.65h.25l-4.98,6.65h-.75Z"/>
+  <circle class="st1" cx="147.7" cy="22" r="3.97"/>
 </svg>
