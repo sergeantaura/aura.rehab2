@@ -7,16 +7,21 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="viewport">
-      <main id="frame" aria-label="Aura single-page website">
-        <a class="hotspot btn-shred" href="https://aura-15.gitbook.io/transactions-and-shreads/shreds-delivery" target="_blank" rel="noopener noreferrer" aria-label="Open Shredstream"></a>
-        <a class="hotspot btn-transaction" href="https://aura-15.gitbook.io/transactions-and-shreads/transaction-submission" target="_blank" rel="noopener noreferrer" aria-label="Open Transaction Submission"></a>
-        <a class="hotspot btn-telegram" href="https://t.me/trade_with_aura#" target="_blank" rel="noopener noreferrer" aria-label="Open Telegram"></a>
-        <a class="hotspot btn-bot" href="https://t.me/trade_with_aura_bot" target="_blank" rel="noopener noreferrer" aria-label="Open Bot"></a>
-        <a class="hotspot btn-manual" href="https://aura-15.gitbook.io/aura-user-manual" target="_blank" rel="noopener noreferrer" aria-label="Open Manual"></a>
-        <a class="hotspot btn-x" href="https://x.com/trade_with_aura" target="_blank" rel="noopener noreferrer" aria-label="Open X"></a>
-      </main>
-    </div>
+    <main class="frame" aria-label="Aura one-page website">
+      <picture>
+        <source media="(max-width: 767px)" srcset="assets/mobile/mobile.png" />
+        <source media="(max-width: 1024px)" srcset="assets/tablet/tablet.png" />
+        <img class="frame-image" src="assets/desktop/descktop.png" alt="Aura interface" />
+      </picture>
+
+      <a class="hotspot btn-shred" href="https://aura-15.gitbook.io/transactions-and-shreads/shreds-delivery" target="_blank" rel="noopener noreferrer" aria-label="Open Shredstream"></a>
+      <a class="hotspot btn-transaction" href="https://aura-15.gitbook.io/transactions-and-shreads/transaction-submission" target="_blank" rel="noopener noreferrer" aria-label="Open Transaction Submission"></a>
+      <a class="hotspot btn-telegram" href="https://t.me/trade_with_aura#" target="_blank" rel="noopener noreferrer" aria-label="Open Telegram"></a>
+      <a class="hotspot btn-bot" href="https://t.me/trade_with_aura_bot" target="_blank" rel="noopener noreferrer" aria-label="Open Bot"></a>
+      <a class="hotspot btn-manual" href="https://aura-15.gitbook.io/aura-user-manual" target="_blank" rel="noopener noreferrer" aria-label="Open Manual"></a>
+      <a class="hotspot btn-x" href="https://x.com/trade_with_aura" target="_blank" rel="noopener noreferrer" aria-label="Open X"></a>
+    </main>
+
     <script src="script.js" defer></script>
   </body>
 </html>
