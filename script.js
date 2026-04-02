@@ -1,43 +1,38 @@
-
-/**
- * Scales the active layout to fit the viewport width.
- * Allows vertical scrolling if content is taller than viewport.
- */
 (function () {
-  var layouts = {
-    desktop: { el: null, w: 1920, h: 1080 },
-    tablet:  { el: null, w: 768,  h: 1024 },
-    mobile:  { el: null, w: 393,  h: 853 }
-  };
- 
-  function init() {
-    layouts.desktop.el = document.querySelector('.desktop-layout');
-    layouts.tablet.el  = document.querySelector('.tablet-layout');
-    layouts.mobile.el  = document.querySelector('.mobile-layout');
-    adjust();
-    window.addEventListener('resize', adjust);
-  }
+  var mobile, tablet, desktop;
  
   function adjust() {
-    var vw = document.documentElement.clientWidth;
-    var active;
+    var vw = window.innerWidth;
+    var vh = window.innerHeight;
+    var el, dw, dh;
  
     if (vw >= 1025) {
-      active = layouts.desktop;
+      el = desktop; dw = 1920; dh = 1080;
     } else if (vw >= 768) {
-      active = layouts.tablet;
+      el = tablet; dw = 768; dh = 1024;
     } else {
-      active = layouts.mobile;
+      el = mobile; dw = 393; dh = 853;
     }
  
-    // Scale down to fit viewport width; never scale up beyond design size
-    var scale = Math.min(vw / active.w, 1);
+    var scale = Math.min(vw / dw, vh / dh);
+    var offsetX = (vw - dw * scale) / 2;
+    var offsetY = Math.max(0, (vh - dh * scale) / 2);
  
-    // Apply scale to active layout
-    active.el.style.transform = 'scale(' + scale + ')';
+    [mobile, tablet, desktop].forEach(function (l) {
+      if (l) l.style.transform = '';
+    });
  
-    // Set body min-height so the page is scrollable
-    document.body.style.minHeight = (active.h * scale) + 'px';
+    if (el) {
+      el.style.transform = 'translate(' + offsetX + 'px,' + offsetY + 'px) scale(' + scale + ')';
+    }
+  }
+ 
+  function init() {
+    mobile = document.querySelector('.mobile');
+    tablet = document.querySelector('.tablet');
+    desktop = document.querySelector('.desktop');
+    adjust();
+    window.addEventListener('resize', adjust);
   }
  
   if (document.readyState === 'loading') {
@@ -46,3 +41,9 @@
     init();
   }
 })();
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+ 
