@@ -1,1 +1,86 @@
+:root {
+  --frame-width: 1920;
+  --frame-height: 1080;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: #f7f7f5;
+}
+
+.frame {
+  position: relative;
+  width: min(100vw, calc(100vh * (var(--frame-width) / var(--frame-height))));
+  aspect-ratio: var(--frame-width) / var(--frame-height);
+  background: center / contain no-repeat url("assets/desktop/descktop.png");
+}
+
+.hotspot {
+  position: absolute;
+  display: block;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.hotspot:focus-visible {
+  outline: 2px solid #373932;
+  outline-offset: 2px;
+}
+
+/* Desktop 1920x1080 */
+.btn-shred { left: 6.1458%; top: 8.9815%; width: 22.0833%; height: 5.5556%; }
+.btn-transaction { left: 71.7708%; top: 8.9815%; width: 22.0833%; height: 5.5556%; }
+.btn-telegram { left: 21.0938%; top: 80.5556%; width: 11.4583%; height: 5.5556%; }
+.btn-bot { left: 36.4062%; top: 80.5556%; width: 11.4583%; height: 5.5556%; }
+.btn-manual { left: 51.7708%; top: 80.5556%; width: 11.4583%; height: 5.5556%; }
+.btn-x { left: 67.0833%; top: 80.5556%; width: 11.4583%; height: 5.5556%; }
+
+/* Tablet 768x1024 */
+@media (max-width: 1024px) and (orientation: portrait) {
+  :root {
+    --frame-width: 768;
+    --frame-height: 1024;
+  }
+
+  .frame {
+    background-image: url("assets/tablet/tablet.png");
+  }
+
+  .btn-bot { left: 22.1354%; top: 62.9883%; width: 22.1354%; height: 4.2969%; }
+  .btn-manual { left: 56.3802%; top: 62.9883%; width: 22.1354%; height: 4.2969%; }
+  .btn-telegram { left: 22.1354%; top: 69.7266%; width: 22.1354%; height: 4.2969%; }
+  .btn-x { left: 56.3802%; top: 69.7266%; width: 22.1354%; height: 4.2969%; }
+  .btn-shred { left: 22.1354%; top: 76.5625%; width: 55.9896%; height: 4.4922%; }
+  .btn-transaction { left: 22.1354%; top: 83.3008%; width: 55.9896%; height: 4.4922%; }
+}
+
+/* Mobile 393x853 */
+@media (max-width: 767px) {
+  :root {
+    --frame-width: 393;
+    --frame-height: 853;
+  }
+
+  .frame {
+    background-image: url("assets/mobile/mobile.png");
+  }
+
+  .btn-bot { left: 16.7939%; top: 62.9543%; width: 33.0789%; height: 4.1032%; }
+  .btn-manual { left: 53.6896%; top: 62.9543%; width: 33.0789%; height: 4.1032%; }
+  .btn-telegram { left: 16.7939%; top: 70.8089%; width: 33.0789%; height: 4.1032%; }
+  .btn-x { left: 53.6896%; top: 70.8089%; width: 33.0789%; height: 4.1032%; }
+  .btn-shred { left: 16.7939%; top: 78.4291%; width: 66.1578%; height: 4.1032%; }
+  .btn-transaction { left: 16.7939%; top: 86.2837%; width: 66.1578%; height: 4.1032%; }
+}
 
