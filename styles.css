@@ -13,49 +13,58 @@ body {
   place-items: center;
 }
 
+/* Desktop: 1920 × 1080 design */
 .frame {
   position: relative;
-  width: 1920px;
-  height: 1080px;
+  aspect-ratio: 1920 / 1080;
+  width: min(100vw, calc(100vh * 1920 / 1080));
   background: #f7f7f5;
-  transform-origin: center center;
   overflow: hidden;
 }
 
-.logo { position: absolute; left: 655px; top: 55px; width: 610px; height: auto; }
+.logo { position: absolute; left: 34.1146%; top: 5.0926%; width: 31.7708%; height: auto; }
 .btn, .btn picture, .btn img, .writing, .writing img { position: absolute; display: block; }
 .btn picture, .writing { width: 100%; height: 100%; }
 .btn img, .writing img { width: 100%; height: 100%; }
-.btn:focus-visible { outline: 2px solid #373932; outline-offset: 2px; }
+.btn:focus-visible { outline: 0.125rem solid #373932; outline-offset: 0.125rem; }
 
-.btn-shred { left: 115px; top: 93px; width: 424px; height: 60px; }
-.btn-transaction { left: 1391px; top: 93px; width: 424px; height: 60px; }
-.btn-telegram { left: 402px; top: 864px; width: 220px; height: 60px; }
-.btn-bot { left: 699px; top: 864px; width: 220px; height: 60px; }
-.btn-manual { left: 995px; top: 864px; width: 220px; height: 60px; }
-.btn-x { left: 1291px; top: 864px; width: 220px; height: 60px; }
-.writing { left: 747px; top: 963px; width: 430px; height: 108px; }
+/* Desktop positions — left/width as % of 1920, top/height as % of 1080 */
+.btn-shred       { left:  5.9896%; top:  8.6111%; width: 22.0833%; height: 5.5556%; }
+.btn-transaction { left: 72.4479%; top:  8.6111%; width: 22.0833%; height: 5.5556%; }
+.btn-telegram    { left: 20.9375%; top: 80%;      width: 11.4583%; height: 5.5556%; }
+.btn-bot         { left: 36.4063%; top: 80%;      width: 11.4583%; height: 5.5556%; }
+.btn-manual      { left: 51.8229%; top: 80%;      width: 11.4583%; height: 5.5556%; }
+.btn-x           { left: 67.2396%; top: 80%;      width: 11.4583%; height: 5.5556%; }
+.writing         { left: 38.9063%; top: 89.1667%; width: 22.3958%; height: 10%; }
 
+/* Tablet: 768 × 1024 design */
 @media (max-width: 1024px) {
-  .frame { width: 768px; height: 1024px; }
-  .logo { left: 159px; top: 49px; width: 450px; }
-  .btn-bot { left: 167px; top: 645px; width: 170px; height: 44px; }
-  .btn-manual { left: 431px; top: 645px; width: 170px; height: 44px; }
-  .btn-telegram { left: 167px; top: 713px; width: 170px; height: 44px; }
-  .btn-x { left: 431px; top: 713px; width: 170px; height: 44px; }
-  .btn-shred { left: 169px; top: 780px; width: 430px; height: 46px; }
-  .btn-transaction { left: 169px; top: 848px; width: 430px; height: 46px; }
-  .writing { left: 166px; top: 932px; width: 430px; height: 108px; }
+  .frame {
+    aspect-ratio: 768 / 1024;
+    width: min(100vw, calc(100vh * 768 / 1024));
+  }
+  .logo             { left: 20.7031%; top:  4.7852%; width: 58.5938%; }
+  .btn-bot          { left: 21.7448%; top: 62.9883%; width: 22.1354%; height: 4.2969%; }
+  .btn-manual       { left: 56.1198%; top: 62.9883%; width: 22.1354%; height: 4.2969%; }
+  .btn-telegram     { left: 21.7448%; top: 69.6289%; width: 22.1354%; height: 4.2969%; }
+  .btn-x            { left: 56.1198%; top: 69.6289%; width: 22.1354%; height: 4.2969%; }
+  .btn-shred        { left: 22.0052%; top: 76.1719%; width: 55.9896%; height: 4.4922%; }
+  .btn-transaction  { left: 22.0052%; top: 82.8125%; width: 55.9896%; height: 4.4922%; }
+  .writing          { left: 21.6146%; top: 91.0156%; width: 55.9896%; height: 10.5469%; }
 }
 
+/* Mobile: 393 × 853 design */
 @media (max-width: 767px) {
-  .frame { width: 393px; height: 853px; }
-  .logo { left: 37px; top: 45px; width: 319px; }
-  .btn-bot { left: 62px; top: 497px; width: 130px; height: 35px; }
-  .btn-manual { left: 201px; top: 497px; width: 130px; height: 35px; }
-  .btn-telegram { left: 62px; top: 563px; width: 130px; height: 35px; }
-  .btn-x { left: 201px; top: 563px; width: 130px; height: 35px; }
-  .btn-shred { left: 66px; top: 630px; width: 260px; height: 35px; }
-  .btn-transaction { left: 67px; top: 691px; width: 260px; height: 35px; }
-  .writing { left: -17px; top: 746px; width: 430px; height: 108px; }
+  .frame {
+    aspect-ratio: 393 / 853;
+    width: min(100vw, calc(100vh * 393 / 853));
+  }
+  .logo             { left:  9.4148%; top:  5.2755%; width: 81.1704%; }
+  .btn-bot          { left: 15.7761%; top: 58.2650%; width: 33.0789%; height: 4.1031%; }
+  .btn-manual       { left: 51.1450%; top: 58.2650%; width: 33.0789%; height: 4.1031%; }
+  .btn-telegram     { left: 15.7761%; top: 66.0023%; width: 33.0789%; height: 4.1031%; }
+  .btn-x            { left: 51.1450%; top: 66.0023%; width: 33.0789%; height: 4.1031%; }
+  .btn-shred        { left: 16.7939%; top: 73.8570%; width: 66.1578%; height: 4.1031%; }
+  .btn-transaction  { left: 17.0483%; top: 81.0082%; width: 66.1578%; height: 4.1031%; }
+  .writing          { left: -4.3257%; top: 87.4560%; width: 109.4148%; height: 12.6612%; }
 }
