@@ -8,18 +8,26 @@ body {
 
 .viewport {
   position: fixed;
-  inset: 0;
-  display: grid;
-  place-items: center;
+  top: 0; right: 0; bottom: 0; left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /* Desktop: 1920 × 1080 design */
 .frame {
   position: relative;
-  aspect-ratio: 1920 / 1080;
-  width: min(100vw, calc(100vh * 1920 / 1080));
   background: #f7f7f5;
   overflow: hidden;
+  aspect-ratio: 1920 / 1080;
+  width: 100vw;
+  width: min(100vw, calc(100vh * 1920 / 1080));
 }
 
 .logo { position: absolute; left: 34.1146%; top: 5.0926%; width: 31.7708%; height: auto; }
@@ -27,6 +35,22 @@ body {
 .btn picture, .writing { width: 100%; height: 100%; }
 .btn img, .writing img { width: 100%; height: 100%; }
 .btn:focus-visible { outline: 0.125rem solid #373932; outline-offset: 0.125rem; }
+
+/* Hover effect for desktop buttons */
+.btn {
+  -webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+@media (hover: hover) and (min-width: 1025px) {
+  .btn:hover {
+    opacity: 0.65;
+    -webkit-transform: scale(1.045);
+    -ms-transform: scale(1.045);
+    transform: scale(1.045);
+  }
+}
 
 /* Desktop positions — left/width as % of 1920, top/height as % of 1080 */
 .btn-shred       { left:  5.9896%; top:  8.6111%; width: 22.0833%; height: 5.5556%; }
@@ -41,6 +65,7 @@ body {
 @media (max-width: 1024px) {
   .frame {
     aspect-ratio: 768 / 1024;
+    width: 100vw;
     width: min(100vw, calc(100vh * 768 / 1024));
   }
   .logo             { left: 20.7031%; top:  4.7852%; width: 58.5938%; }
@@ -57,6 +82,7 @@ body {
 @media (max-width: 767px) {
   .frame {
     aspect-ratio: 393 / 853;
+    width: 100vw;
     width: min(100vw, calc(100vh * 393 / 853));
   }
   .logo             { left:  9.4148%; top:  5.2755%; width: 81.1704%; }
