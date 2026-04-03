@@ -43,11 +43,11 @@ body {
   cursor: pointer;
 }
 
-@media (hover: hover) and (min-width: 1025px) {
+@media (min-width: 1025px) {
   .btn:hover {
-    -webkit-transform: translateY(-0.35em);
-    -ms-transform: translateY(-0.35em);
-    transform: translateY(-0.35em);
+    -webkit-transform: translateY(-0.2em);
+    -ms-transform: translateY(-0.2em);
+    transform: translateY(-0.2em);
   }
 }
 
