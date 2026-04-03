@@ -48,9 +48,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  body { overflow: auto; }
-  .viewport { position: static; min-height: 100%; display: block; }
-  .frame { width: 393px; height: 853px; margin: 0 auto; transform: none !important; }
+  .frame { width: 393px; height: 853px; }
   .logo { left: 26px; top: 85px; width: 340px; }
   .btn-bot { left: 60px; top: 537px; width: 130px; height: 35px; }
   .btn-manual { left: 205px; top: 537px; width: 130px; height: 35px; }
