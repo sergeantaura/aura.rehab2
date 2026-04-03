@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"print\\(''Logo aspect check:''\\); print\\(f''  viewBox: 450x544, ratio: {544/450:.4f}''\\); print\\(f''  Desktop: 610px wide, expected height: {610*544/450:.1f}px''\\); print\\(f''  Tablet: 450px wide, expected height: {450*544/450:.1f}px''\\); print\\(f''  Mobile: 319px wide, expected height: {319*544/450:.1f}px''\\)\")"
+    ]
+  }
+}

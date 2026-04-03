@@ -19,42 +19,43 @@ body {
   height: 1080px;
   background: #f7f7f5;
   transform-origin: center center;
+  overflow: hidden;
 }
 
-.logo { position: absolute; left: 645px; top: 56px; width: 630px; height: auto; }
+.logo { position: absolute; left: 655px; top: 55px; width: 610px; height: auto; }
 .btn, .btn picture, .btn img, .writing, .writing img { position: absolute; display: block; }
 .btn picture, .writing { width: 100%; height: 100%; }
 .btn img, .writing img { width: 100%; height: 100%; }
 .btn:focus-visible { outline: 2px solid #373932; outline-offset: 2px; }
 
-.btn-shred { left: 118px; top: 97px; width: 424px; height: 60px; }
-.btn-transaction { left: 1378px; top: 97px; width: 424px; height: 60px; }
-.btn-telegram { left: 405px; top: 870px; width: 220px; height: 60px; }
-.btn-bot { left: 699px; top: 870px; width: 220px; height: 60px; }
-.btn-manual { left: 994px; top: 870px; width: 220px; height: 60px; }
-.btn-x { left: 1288px; top: 870px; width: 220px; height: 60px; }
-.writing { left: 745px; top: 940px; width: 430px; height: 108px; }
+.btn-shred { left: 115px; top: 93px; width: 424px; height: 60px; }
+.btn-transaction { left: 1391px; top: 93px; width: 424px; height: 60px; }
+.btn-telegram { left: 402px; top: 864px; width: 220px; height: 60px; }
+.btn-bot { left: 699px; top: 864px; width: 220px; height: 60px; }
+.btn-manual { left: 995px; top: 864px; width: 220px; height: 60px; }
+.btn-x { left: 1291px; top: 864px; width: 220px; height: 60px; }
+.writing { left: 747px; top: 963px; width: 430px; height: 108px; }
 
 @media (max-width: 1024px) {
   .frame { width: 768px; height: 1024px; }
-  .logo { left: 149px; top: 40px; width: 470px; }
-  .btn-bot { left: 170px; top: 675px; width: 170px; height: 44px; }
-  .btn-manual { left: 433px; top: 675px; width: 170px; height: 44px; }
-  .btn-telegram { left: 170px; top: 744px; width: 170px; height: 44px; }
-  .btn-x { left: 433px; top: 744px; width: 170px; height: 44px; }
-  .btn-shred { left: 170px; top: 814px; width: 430px; height: 46px; }
-  .btn-transaction { left: 170px; top: 883px; width: 430px; height: 46px; }
-  .writing { left: 252px; top: 948px; width: 264px; height: 66px; }
+  .logo { left: 159px; top: 49px; width: 450px; }
+  .btn-bot { left: 167px; top: 645px; width: 170px; height: 44px; }
+  .btn-manual { left: 431px; top: 645px; width: 170px; height: 44px; }
+  .btn-telegram { left: 167px; top: 713px; width: 170px; height: 44px; }
+  .btn-x { left: 431px; top: 713px; width: 170px; height: 44px; }
+  .btn-shred { left: 169px; top: 780px; width: 430px; height: 46px; }
+  .btn-transaction { left: 169px; top: 848px; width: 430px; height: 46px; }
+  .writing { left: 166px; top: 932px; width: 430px; height: 108px; }
 }
 
 @media (max-width: 767px) {
   .frame { width: 393px; height: 853px; }
-  .logo { left: 26px; top: 85px; width: 340px; }
-  .btn-bot { left: 60px; top: 537px; width: 130px; height: 35px; }
-  .btn-manual { left: 205px; top: 537px; width: 130px; height: 35px; }
-  .btn-telegram { left: 60px; top: 604px; width: 130px; height: 35px; }
-  .btn-x { left: 205px; top: 604px; width: 130px; height: 35px; }
-  .btn-shred { left: 66px; top: 669px; width: 260px; height: 35px; }
-  .btn-transaction { left: 66px; top: 736px; width: 260px; height: 35px; }
-  .writing { left: 92px; top: 775px; width: 210px; height: 53px; }
+  .logo { left: 37px; top: 45px; width: 319px; }
+  .btn-bot { left: 62px; top: 497px; width: 130px; height: 35px; }
+  .btn-manual { left: 201px; top: 497px; width: 130px; height: 35px; }
+  .btn-telegram { left: 62px; top: 563px; width: 130px; height: 35px; }
+  .btn-x { left: 201px; top: 563px; width: 130px; height: 35px; }
+  .btn-shred { left: 66px; top: 630px; width: 260px; height: 35px; }
+  .btn-transaction { left: 67px; top: 691px; width: 260px; height: 35px; }
+  .writing { left: -17px; top: 746px; width: 430px; height: 108px; }
 }
