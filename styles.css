@@ -37,14 +37,14 @@ body {
 
 @media (max-width: 1024px) {
   .frame { width: 768px; height: 1024px; }
-  .logo { left: 133px; top: 62px; width: 502px; }
-  .btn-bot { left: 170px; top: 645px; width: 170px; height: 44px; }
-  .btn-manual { left: 433px; top: 645px; width: 170px; height: 44px; }
-  .btn-telegram { left: 170px; top: 714px; width: 170px; height: 44px; }
-  .btn-x { left: 433px; top: 714px; width: 170px; height: 44px; }
-  .btn-shred { left: 170px; top: 784px; width: 430px; height: 46px; }
-  .btn-transaction { left: 170px; top: 853px; width: 430px; height: 46px; }
-  .writing { left: 252px; top: 905px; width: 264px; height: 66px; }
+  .logo { left: 149px; top: 40px; width: 470px; }
+  .btn-bot { left: 170px; top: 675px; width: 170px; height: 44px; }
+  .btn-manual { left: 433px; top: 675px; width: 170px; height: 44px; }
+  .btn-telegram { left: 170px; top: 744px; width: 170px; height: 44px; }
+  .btn-x { left: 433px; top: 744px; width: 170px; height: 44px; }
+  .btn-shred { left: 170px; top: 814px; width: 430px; height: 46px; }
+  .btn-transaction { left: 170px; top: 883px; width: 430px; height: 46px; }
+  .writing { left: 252px; top: 948px; width: 264px; height: 66px; }
 }
 
 @media (max-width: 767px) {
@@ -52,12 +52,11 @@ body {
   .viewport { position: static; min-height: 100%; display: block; }
   .frame { width: 393px; height: 853px; margin: 0 auto; transform: none !important; }
   .logo { left: 26px; top: 85px; width: 340px; }
-  .btn-bot { left: 66px; top: 537px; width: 130px; height: 35px; }
-  .btn-manual { left: 211px; top: 537px; width: 130px; height: 35px; }
-  .btn-telegram { left: 66px; top: 604px; width: 130px; height: 35px; }
-  .btn-x { left: 211px; top: 604px; width: 130px; height: 35px; }
+  .btn-bot { left: 60px; top: 537px; width: 130px; height: 35px; }
+  .btn-manual { left: 205px; top: 537px; width: 130px; height: 35px; }
+  .btn-telegram { left: 60px; top: 604px; width: 130px; height: 35px; }
+  .btn-x { left: 205px; top: 604px; width: 130px; height: 35px; }
   .btn-shred { left: 66px; top: 669px; width: 260px; height: 35px; }
   .btn-transaction { left: 66px; top: 736px; width: 260px; height: 35px; }
   .writing { left: 92px; top: 775px; width: 210px; height: 53px; }
 }
-
