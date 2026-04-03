@@ -84,25 +84,25 @@
   </defs>
   <rect class="m" width="393" height="853"/>
   <g>
-    <circle class="h" cx="168.04" cy="513.78" r="2.66"/>
-    <rect class="n" x="73.18" y="499.97" width="109.08" height="27.61" rx="13.81" ry="13.81"/>
-    <text class="e" transform="translate(116.9 518.19)"><tspan x="0" y="0">bot</tspan></text>
-    <circle class="f" cx="168.04" cy="513.78" r="2.66"/>
+    <circle class="h" cx="167.18" cy="513.78" r="2.66"/>
+    <rect class="n" x="72.31" y="499.97" width="109.08" height="27.61" rx="13.81" ry="13.81"/>
+    <text class="e" transform="translate(116.04 518.19)"><tspan x="0" y="0">bot</tspan></text>
+    <circle class="f" cx="167.18" cy="513.78" r="2.66"/>
   </g>
   <g>
-    <rect class="n" x="73.18" y="565.99" width="109.08" height="27.61" rx="13.81" ry="13.81"/>
-    <text class="e" transform="translate(98.84 583.81)"><tspan class="i" x="0" y="0">t</tspan><tspan class="k" x="4.79" y="0">eleg</tspan><tspan class="g" x="32.05" y="0">r</tspan><tspan x="36.58" y="0">am</tspan></text>
-    <circle class="f" cx="169.09" cy="579.79" r="2.66"/>
+    <rect class="n" x="72.31" y="566.59" width="109.08" height="27.61" rx="13.81" ry="13.81"/>
+    <text class="e" transform="translate(97.97 584.41)"><tspan class="i" x="0" y="0">t</tspan><tspan class="k" x="4.79" y="0">eleg</tspan><tspan class="g" x="32.05" y="0">r</tspan><tspan x="36.58" y="0">am</tspan></text>
+    <circle class="f" cx="168.22" cy="580.39" r="2.66"/>
   </g>
   <g>
-    <rect class="n" x="210.89" y="565.99" width="109.08" height="27.61" rx="13.81" ry="13.81"/>
-    <text class="e" transform="translate(261.37 583.81)"><tspan x="0" y="0">X</tspan></text>
-    <circle class="f" cx="307.44" cy="579.79" r="2.66"/>
+    <rect class="n" x="211.26" y="566.59" width="109.08" height="27.61" rx="13.81" ry="13.81"/>
+    <text class="e" transform="translate(261.74 584.41)"><tspan x="0" y="0">X</tspan></text>
+    <circle class="f" cx="307.81" cy="580.39" r="2.66"/>
   </g>
   <g>
-    <rect class="n" x="210.89" y="499.97" width="109.08" height="27.61" rx="13.81" ry="13.81"/>
-    <text class="e" transform="translate(240.86 517.8)"><tspan x="0" y="0">manual</tspan></text>
-    <circle class="f" cx="306.63" cy="513.78" r="2.66"/>
+    <rect class="n" x="211.26" y="499.97" width="109.08" height="27.61" rx="13.81" ry="13.81"/>
+    <text class="e" transform="translate(241.24 517.8)"><tspan x="0" y="0">manual</tspan></text>
+    <circle class="f" cx="307.01" cy="513.78" r="2.66"/>
   </g>
   <text class="d" transform="translate(102.76 804.23)"><tspan class="c" x="0" y="0" xml:space="preserve">IN  </tspan><tspan class="b" x="28.74" y="0">A</tspan><tspan class="c" x="40.53" y="0" xml:space="preserve">URA  </tspan><tspan class="p" x="88.2" y="0">W</tspan><tspan class="c" x="106.61" y="0" xml:space="preserve">E  TRADE</tspan></text>
   <g>
