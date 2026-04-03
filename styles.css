@@ -1,18 +1,16 @@
 * { box-sizing: border-box; }
-
-html,
-body {
-  margin: 0;
-  width: 100%;
-  min-height: 100%;
-}
+html, body { margin: 0; width: 100%; height: 100%; }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   background: #f7f7f5;
   overflow: hidden;
+}
+
+.viewport {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
 }
 
 .frame {
@@ -20,38 +18,14 @@ body {
   width: 1920px;
   height: 1080px;
   background: #f7f7f5;
-  flex: 0 0 auto;
+  transform-origin: center center;
 }
 
-.logo {
-  position: absolute;
-  left: 645px;
-  top: 56px;
-  width: 630px;
-  height: auto;
-}
+.logo { position: absolute; left: 645px; top: 56px; width: 630px; height: auto; }
+.btn, .btn picture, .btn img, .writing, .writing img { position: absolute; display: block; }
+.btn img, .writing img { width: 100%; height: 100%; }
+.btn:focus-visible { outline: 2px solid #373932; outline-offset: 2px; }
 
-.btn,
-.btn picture,
-.btn img,
-.writing,
-.writing img {
-  position: absolute;
-  display: block;
-}
-
-.btn img,
-.writing img {
-  width: 100%;
-  height: 100%;
-}
-
-.btn:focus-visible {
-  outline: 2px solid #373932;
-  outline-offset: 2px;
-}
-
-/* Desktop */
 .btn-shred { left: 118px; top: 97px; width: 424px; height: 60px; }
 .btn-transaction { left: 1378px; top: 97px; width: 424px; height: 60px; }
 .btn-telegram { left: 405px; top: 870px; width: 220px; height: 60px; }
@@ -60,21 +34,9 @@ body {
 .btn-x { left: 1288px; top: 870px; width: 220px; height: 60px; }
 .writing { left: 745px; top: 940px; width: 430px; height: 108px; }
 
-/* Tablet: allow scroll/toggles only when needed */
 @media (max-width: 1024px) {
-  body { overflow: auto; }
-
-  .frame {
-    width: 768px;
-    height: 1024px;
-  }
-
-  .logo {
-    left: 133px;
-    top: 62px;
-    width: 502px;
-  }
-
+  .frame { width: 768px; height: 1024px; }
+  .logo { left: 133px; top: 62px; width: 502px; }
   .btn-bot { left: 170px; top: 645px; width: 170px; height: 44px; }
   .btn-manual { left: 433px; top: 645px; width: 170px; height: 44px; }
   .btn-telegram { left: 170px; top: 714px; width: 170px; height: 44px; }
@@ -84,21 +46,11 @@ body {
   .writing { left: 252px; top: 905px; width: 264px; height: 66px; }
 }
 
-/* Mobile: allow scroll/toggles only when needed */
 @media (max-width: 767px) {
   body { overflow: auto; }
-
-  .frame {
-    width: 393px;
-    height: 853px;
-  }
-
-  .logo {
-    left: 26px;
-    top: 85px;
-    width: 340px;
-  }
-
+  .viewport { position: static; min-height: 100%; display: block; }
+  .frame { width: 393px; height: 853px; margin: 0 auto; transform: none !important; }
+  .logo { left: 26px; top: 85px; width: 340px; }
   .btn-bot { left: 66px; top: 537px; width: 130px; height: 35px; }
   .btn-manual { left: 211px; top: 537px; width: 130px; height: 35px; }
   .btn-telegram { left: 66px; top: 604px; width: 130px; height: 35px; }
