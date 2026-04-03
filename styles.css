@@ -38,17 +38,16 @@ body {
 
 /* Hover effect for desktop buttons */
 .btn {
-  -webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
   cursor: pointer;
 }
 
 @media (hover: hover) and (min-width: 1025px) {
   .btn:hover {
-    opacity: 0.65;
-    -webkit-transform: scale(1.045);
-    -ms-transform: scale(1.045);
-    transform: scale(1.045);
+    -webkit-transform: translateY(-0.35em);
+    -ms-transform: translateY(-0.35em);
+    transform: translateY(-0.35em);
   }
 }
 
