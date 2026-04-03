@@ -6,6 +6,8 @@ function fitDesktopAndTablet() {
   const isMobile = window.matchMedia('(max-width: 767px)').matches;
   if (isMobile) {
     frame.style.transform = 'none';
+    frame.style.marginLeft = '0px';
+    frame.style.marginTop = '0px';
     return;
   }
 
@@ -14,9 +16,11 @@ function fitDesktopAndTablet() {
   const scale = Math.min(window.innerWidth / width, window.innerHeight / height);
 
   frame.style.transform = `scale(${scale})`;
+  const isTablet = window.matchMedia('(max-width: 1024px)').matches;
+  frame.style.marginLeft = isTablet ? '0px' : '-190px';
+  frame.style.marginTop = isTablet ? '0px' : '-190px';
 }
 
 window.addEventListener('resize', fitDesktopAndTablet);
 window.addEventListener('orientationchange', fitDesktopAndTablet);
 fitDesktopAndTablet();
-
